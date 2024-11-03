@@ -1,0 +1,33 @@
+# colorizing ls
+alias ls="ls -G"
+
+# long listing alias 
+alias ll="ls -al"
+
+# use bat instead of cat
+alias cat="bat"
+
+alias kc="kubectl"
+alias kcg="kubectl get"
+alias kcgp="kubectl get pods"
+alias kcl="kubectl logs"
+alias kcd="kubectl describe"
+alias kcdp="kubectl describe pod"
+
+alias tf="terraform"
+alias tfp="terraform plan"
+alias tfa="terraform apply"
+
+alias prthn="python manage.py runserver 0.0.0.0:8000"
+
+alias mk="minikube"
+
+alias d-c="docker-compose"
+alias dr="docker"
+
+alias pt="python manage.py test"
+
+# testcontainer workaround for rancher
+export DOCKER_HOST=unix://$HOME/.rd/docker.sock
+export TESTCONTAINERS_DOCKER_SOCKET_OVERRIDE=/var/run/docker.sock
+export TESTCONTAINERS_HOST_OVERRIDE=localhost
