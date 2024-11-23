@@ -18,14 +18,10 @@ alias tf="terraform"
 alias tfp="terraform plan"
 alias tfa="terraform apply"
 
-alias prthn="python manage.py runserver 0.0.0.0:8000"
-
 alias mk="minikube"
 
 alias d-c="docker-compose"
 alias dr="docker"
-
-alias pt="python manage.py test"
 
 # testcontainer workaround for rancher
 export DOCKER_HOST=unix://$HOME/.rd/docker.sock
