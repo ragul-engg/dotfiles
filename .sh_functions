@@ -1,0 +1,21 @@
+#!/bin/bash
+
+function g_next(){
+	CURR_COMMIT=$(git rev-parse HEAD)
+	git checkout $(git log --branches -1 --pretty=format:"%H")
+	NEXT_COMMIT=$(git rev-list "$CURR_COMMIT"..HEAD | tail -1)
+	git checkout "$NEXT_COMMIT"
+}
+
+function g_prev(){
+	git checkout HEAD^1
+}
+
+function awsl() {
+	aws-vault login $1 -d 8h
+}
+
+function awse() {
+	aws-vault exec $1 -d 8h
+}
+
