@@ -1,0 +1,24 @@
+[alias]
+	lol = log --oneline --graph --all
+
+[init]
+	defaultBranch = main
+
+[includeIf "gitdir:~/personal/"]
+	path = ~/personal/.gitconfig.pers
+
+[includeIf "gitdir:~/.dotfiles/"]
+	path = ~/personal/.gitconfig.pers
+
+[includeIf "gitdir:~/work/talon/"]
+	path = ~/work/talon/.gitconfig.talon
+
+[includeIf "gitdir:~/work/sahaj/"]
+	path = ~/work/sahaj/.gitconfig.sahaj
+
+[core]
+    excludesfile = ~/.gitignore
+	editor = vim
+
+[push]
+	autoSetupRemote = true
