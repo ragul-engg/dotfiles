@@ -15,6 +15,7 @@ alias kcd="kubectl describe"
 alias kcdp="kubectl describe pod"
 
 alias tf="terraform"
+alias tfi="terraform init"
 alias tfp="terraform plan"
 alias tfa="terraform apply"
 
