@@ -132,6 +132,7 @@ eval "$(fzf --zsh)"
 [ -f $HOME/.iterm2_shell_integration.zsh ] && . $HOME/.iterm2_shell_integration.zsh
 
 [ -f $HOMEBREW_PREFIX/etc/profile.d/autojump.sh ] && . $HOMEBREW_PREFIX/etc/profile.d/autojump.sh
+[ -f /usr/share/autojump/autojump.sh ] && . /usr/share/autojump/autojump.sh
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
