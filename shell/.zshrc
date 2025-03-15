@@ -110,10 +110,6 @@ source $ZSH/oh-my-zsh.sh
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
-[ -d /Users/raguls/.rd/bin ] && export PATH="/Users/raguls/.rd/bin:$PATH"
-### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
-
 # mise activate script
 eval "$(mise activate zsh)"
 
@@ -121,8 +117,6 @@ eval "$(mise activate zsh)"
 
 source ~/.shell_aliases
 source ~/.shell_functions
-
-[ -f $HOME/.shell_alias_rancher_workaround ] && . ~/.shell_alias_rancher_workaround
 
 export BAT_THEME_DARK=Dracula
 export BAT_THEME_LIGHT=Coldark-Cold
@@ -150,4 +144,3 @@ eval "$(fzf --zsh)"
 # <<< conda initialize <<<
 
 export JAVA_TOOL_OPTIONS='-Djava.awt.headless=true'
-
