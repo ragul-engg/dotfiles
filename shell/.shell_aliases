@@ -1,5 +1,5 @@
 # colorizing ls
-alias ls="ls -G"
+alias ls="ls --color=auto"
 
 # long listing alias 
 alias ll="ls -al"
