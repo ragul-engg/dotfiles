@@ -5,8 +5,10 @@ alias ls="ls --color=auto"
 alias ll="ls -al"
 
 # use bat instead of cat
-[ -f /usr/bin/bat ] && alias cat="bat"
-[ -f /usr/bin/batcat ] && alias cat="batcat"
+bat_path=$(command -v bat)
+[[ -n $bat_path ]] && alias cat=$bat_path
+bat_cat_path=$(command -v batcat)
+[[ -n $bat_cat_path ]] && alias cat=$bat_cat_path
 
 alias kc="kubectl"
 alias kcg="kubectl get"
