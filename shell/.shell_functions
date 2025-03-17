@@ -12,9 +12,13 @@ function g_prev() {
 }
 
 function awsl() {
-	aws-vault login $1 -d 8h
+	acccount=$1
+	shift
+	aws-vault login $account -d 8h "$@"
 }
 
 function awse() {
-	aws-vault exec $1 -d 8h
+	acccount=$1
+	shift
+	aws-vault exec $acccount -d 8h "$@"
 }
