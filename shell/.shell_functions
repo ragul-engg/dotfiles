@@ -11,14 +11,12 @@ function g_prev() {
 	git checkout HEAD^1
 }
 
-function awsl() {
-	acccount=$1
-	shift
-	aws-vault login $account -d 8h "$@"
-}
+alias awse="my_aws_helper exec"
+alias awsl="my_aws_helper login"
 
-function awse() {
-	acccount=$1
-	shift
-	aws-vault exec $acccount -d 8h "$@"
+function my_aws_helper() {
+	cmd=$1
+	acccount=$2
+	shift 2
+	aws-vault $cmd $account -d 8h "$@"
 }
