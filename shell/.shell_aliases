@@ -2,7 +2,7 @@
 alias ls="ls --color=auto"
 
 # long listing alias 
-alias ll="ls -altr"
+alias ll="ls -Altr"
 
 # use bat instead of cat
 bat_path=$(command -v bat)
