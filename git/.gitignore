@@ -1,3 +1,9 @@
 .mise.local.toml
 mise.local.toml
 
+.idea/
+
+.DS_Store
+
+.terraform/
+
