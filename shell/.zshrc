@@ -118,6 +118,8 @@ eval "$(mise activate zsh)"
 source ~/.shell_aliases
 source ~/.shell_functions
 
+[ -f $HOME/.zsh_opts ] && . $HOME/.zsh_opts
+
 export BAT_THEME_DARK=Dracula
 export BAT_THEME_LIGHT=Coldark-Cold
 
