@@ -120,9 +120,6 @@ source ~/.shell_functions
 
 [ -f $HOME/.zsh_opts ] && . $HOME/.zsh_opts
 
-export BAT_THEME_DARK=Dracula
-export BAT_THEME_LIGHT=Coldark-Cold
-
 eval "$(fzf --zsh)"
 
 [ -f $HOME/.iterm2_shell_integration.zsh ] && . $HOME/.iterm2_shell_integration.zsh
