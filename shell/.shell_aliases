@@ -1,8 +1,9 @@
 # colorizing ls
 alias ls="ls --color=auto"
 
-# long listing alias 
+# long listing alias
 alias ll="ls -Altr"
+alias c="clear"
 
 # use bat instead of cat
 bat_path=$(command -v bat)
