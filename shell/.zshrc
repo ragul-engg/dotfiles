@@ -142,4 +142,3 @@ eval "$(fzf --zsh)"
 # unset __conda_setup
 # <<< conda initialize <<<
 
-export JAVA_TOOL_OPTIONS='-Djava.awt.headless=true'
