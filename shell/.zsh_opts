@@ -5,7 +5,7 @@ setopt HIST_SAVE_NO_DUPS
 setopt HIST_IGNORE_SPACE
 setopt SHARE_HISTORY
 
-export HISTORY_IGNORE="(clear|ls|cat|cd)"
+export HISTORY_IGNORE="(clear)"
 ###
 
 ### bat options
