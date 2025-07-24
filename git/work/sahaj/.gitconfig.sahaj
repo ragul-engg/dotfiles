@@ -1,10 +1,9 @@
 [user]
     email = raguls@sahaj.ai
-    name = raguls-sahaj
+    name = ragul-engg
 
 [github]
-    user = raguls-sahaj
+    user = ragul-engg
 
 [core]
-    sshCommand = "ssh -i ~/.ssh/raguls-sahaj-github"
-
+    sshCommand = "ssh -i ~/.ssh/ragul-engg-github"
