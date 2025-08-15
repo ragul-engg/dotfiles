@@ -142,3 +142,4 @@ eval "$(fzf --zsh)"
 # unset __conda_setup
 # <<< conda initialize <<<
 
+export K9S_CONFIG_DIR=~/.dotfiles/k9s
