@@ -20,3 +20,11 @@ function my_aws_helper() {
 	shift 2
 	aws-vault $cmd $account -d 8h $@
 }
+
+function create_gitlab_mr() {
+    if [ -z "$GITLAB_USER_ID" ]; then
+        echo "Error: GITLAB_USER_ID environment variable is not set."
+        return 1
+    fi
+    glab mr create -a "$GITLAB_USER_ID" --fill --remove-source-branch
+}
