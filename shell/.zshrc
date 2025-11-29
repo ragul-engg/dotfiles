@@ -126,5 +126,3 @@ eval "$(fzf --zsh)"
 
 [ -f $HOMEBREW_PREFIX/etc/profile.d/autojump.sh ] && . $HOMEBREW_PREFIX/etc/profile.d/autojump.sh || true
 [ -f /usr/share/autojump/autojump.sh ] && . /usr/share/autojump/autojump.sh || true
-
-export K9S_CONFIG_DIR=~/.dotfiles/k9s
