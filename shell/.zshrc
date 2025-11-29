@@ -110,8 +110,19 @@ source $ZSH/oh-my-zsh.sh
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# mise activate script
-eval "$(mise activate zsh)"
+autoload -U add-zsh-hook
+
+_lazy_init() {
+  command -v mise >/dev/null && eval "$(mise activate zsh)"
+  command -v fzf  >/dev/null && eval "$(fzf --zsh)"
+  source "$HOMEBREW_PREFIX/etc/profile.d/autojump.sh" 2>/dev/null
+  source "/usr/share/autojump/autojump.sh" 2>/dev/null
+  source "$HOME/.iterm2_shell_integration.zsh" 2>/dev/null
+
+  add-zsh-hook -d precmd _lazy_init
+}
+
+add-zsh-hook precmd _lazy_init
 
 #eval "$(starship init zsh)"
 
@@ -120,9 +131,3 @@ source ~/.shell_functions
 
 [ -f $HOME/.zsh_opts ] && . $HOME/.zsh_opts
 
-eval "$(fzf --zsh)"
-
-[ -f $HOME/.iterm2_shell_integration.zsh ] && . $HOME/.iterm2_shell_integration.zsh
-
-[ -f $HOMEBREW_PREFIX/etc/profile.d/autojump.sh ] && . $HOMEBREW_PREFIX/etc/profile.d/autojump.sh || true
-[ -f /usr/share/autojump/autojump.sh ] && . /usr/share/autojump/autojump.sh || true
