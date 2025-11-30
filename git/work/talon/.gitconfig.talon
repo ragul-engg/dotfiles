@@ -7,4 +7,3 @@
 
 [core]
     sshCommand = "ssh -i ~/.ssh/raguls-sahaj-gitlab"
-
