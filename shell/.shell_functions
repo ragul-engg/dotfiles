@@ -12,7 +12,7 @@ function g_prev() {
 }
 
 function gwtcd() {
-  cd "$(git worktree list | fzf | awk '{print $1}')"
+  cd "$(gwtls | fzf | awk '{print $1}')"
 }
 
 alias awse="my_aws_helper exec"
