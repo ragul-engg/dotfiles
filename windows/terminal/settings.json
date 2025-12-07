@@ -1,11 +1,9 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "actions": 
-    [
+    "actions": [
         {
-            "command": 
-            {
+            "command": {
                 "action": "splitPane",
                 "split": "auto",
                 "splitMode": "duplicate"
@@ -17,8 +15,7 @@
             "id": "User.find"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "copy",
                 "singleLine": false
             },
@@ -39,8 +36,7 @@
     "focusFollowMouse": true,
     "initialCols": 80,
     "initialRows": 23,
-    "keybindings": 
-    [
+    "keybindings": [
         {
             "id": "User.splitPane.A6751878",
             "keys": "alt+shift+d"
@@ -59,26 +55,21 @@
         }
     ],
     "launchMode": "maximized",
-    "newTabMenu": 
-    [
+    "newTabMenu": [
         {
             "type": "remainingProfiles"
         }
     ],
-    "profiles": 
-    {
-        "defaults": 
-        {
+    "profiles": {
+        "defaults": {
             "antialiasingMode": "cleartype",
             "backgroundImageOpacity": 0.6,
             "colorScheme": "Vintage",
             "cursorHeight": 10,
             "cursorShape": "underscore",
-            "font": 
-            {
+            "font": {
                 "face": "JetBrainsMono Nerd Font Mono",
-                "features": 
-                {
+                "features": {
                     "liga": 1,
                     "ss10": 1
                 },
@@ -88,8 +79,7 @@
             "opacity": 80,
             "useAcrylic": true
         },
-        "list": 
-        [
+        "list": [
             {
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": false,
@@ -133,8 +123,7 @@
             }
         ]
     },
-    "schemes": 
-    [
+    "schemes": [
         {
             "background": "#31363B",
             "black": "#31363B",
