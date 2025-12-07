@@ -7,9 +7,6 @@
 			"Packages" : 
 			[
 				{
-					"PackageIdentifier" : "CoreyButler.NVMforWindows"
-				},
-				{
 					"PackageIdentifier" : "7zip.7zip"
 				},
 				{
@@ -28,9 +25,6 @@
 					"PackageIdentifier" : "Notepad++.Notepad++"
 				},
 				{
-					"PackageIdentifier" : "Microsoft.OneDrive"
-				},
-				{
 					"PackageIdentifier" : "Proton.ProtonVPN"
 				},
 				{
@@ -43,22 +37,10 @@
 					"PackageIdentifier" : "Microsoft.VCRedist.2008.x64"
 				},
 				{
-					"PackageIdentifier" : "hoppscotch.Hoppscotch"
-				},
-				{
 					"PackageIdentifier" : "VSCodium.VSCodium"
 				},
 				{
-					"PackageIdentifier" : "EclipseAdoptium.Temurin.17.JDK"
-				},
-				{
 					"PackageIdentifier" : "JanDeDobbeleer.OhMyPosh"
-				},
-				{
-					"PackageIdentifier" : "GoLang.Go"
-				},
-				{
-					"PackageIdentifier" : "EclipseAdoptium.Temurin.21.JDK"
 				},
 				{
 					"PackageIdentifier" : "PuTTY.PuTTY"
@@ -77,9 +59,6 @@
 				},
 				{
 					"PackageIdentifier" : "Kubernetes.minikube"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.Edge"
 				},
 				{
 					"PackageIdentifier" : "OBSProject.OBSStudio"
@@ -130,9 +109,6 @@
 					"PackageIdentifier" : "Microsoft.PowerShell"
 				},
 				{
-					"PackageIdentifier" : "Jellyfin.JellyfinMediaPlayer"
-				},
-				{
 					"PackageIdentifier" : "Bitwarden.Bitwarden"
 				},
 				{
@@ -170,9 +146,6 @@
 				},
 				{
 					"PackageIdentifier" : "Canonical.Ubuntu.2204"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.Teams"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.AppInstaller"
