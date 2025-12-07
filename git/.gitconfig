@@ -5,16 +5,16 @@
 	defaultBranch = main
 
 [includeIf "gitdir:~/personal/"]
-	path = ~/personal/.gitconfig.pers
+	path = ~/personal/.gitconfig
 
 [includeIf "gitdir:~/.dotfiles/"]
-	path = ~/personal/.gitconfig.pers
+	path = ~/personal/.gitconfig
 
 [includeIf "gitdir:~/work/talon/"]
-	path = ~/work/talon/.gitconfig.talon
+	path = ~/work/talon/.gitconfig
 
 [includeIf "gitdir:~/work/sahaj/"]
-	path = ~/work/sahaj/.gitconfig.sahaj
+	path = ~/work/sahaj/.gitconfig
 
 [core]
     excludesfile = ~/.gitignore
