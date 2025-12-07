@@ -1,0 +1,305 @@
+{
+    "$help": "https://aka.ms/terminal-documentation",
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+    "actions": 
+    [
+        {
+            "command": 
+            {
+                "action": "splitPane",
+                "split": "auto",
+                "splitMode": "duplicate"
+            },
+            "id": "User.splitPane.A6751878"
+        },
+        {
+            "command": "find",
+            "id": "User.find"
+        },
+        {
+            "command": 
+            {
+                "action": "copy",
+                "singleLine": false
+            },
+            "id": "User.copy.644BA8F2"
+        },
+        {
+            "command": "paste",
+            "id": "User.paste"
+        }
+    ],
+    "alwaysOnTop": false,
+    "alwaysShowNotificationIcon": false,
+    "centerOnLaunch": false,
+    "copyFormatting": "none",
+    "copyOnSelect": true,
+    "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+    "disableAnimations": false,
+    "focusFollowMouse": true,
+    "initialCols": 80,
+    "initialRows": 23,
+    "keybindings": 
+    [
+        {
+            "id": "User.splitPane.A6751878",
+            "keys": "alt+shift+d"
+        },
+        {
+            "id": "User.find",
+            "keys": "ctrl+shift+f"
+        },
+        {
+            "id": "User.paste",
+            "keys": "ctrl+v"
+        },
+        {
+            "id": "User.copy.644BA8F2",
+            "keys": "ctrl+c"
+        }
+    ],
+    "launchMode": "maximized",
+    "newTabMenu": 
+    [
+        {
+            "type": "remainingProfiles"
+        }
+    ],
+    "profiles": 
+    {
+        "defaults": 
+        {
+            "antialiasingMode": "cleartype",
+            "backgroundImageOpacity": 0.6,
+            "colorScheme": "Vintage",
+            "cursorHeight": 10,
+            "cursorShape": "underscore",
+            "font": 
+            {
+                "face": "JetBrainsMono Nerd Font Mono",
+                "features": 
+                {
+                    "liga": 1,
+                    "ss10": 1
+                },
+                "size": 10,
+                "weight": "medium"
+            },
+            "opacity": 80,
+            "useAcrylic": true
+        },
+        "list": 
+        [
+            {
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "hidden": false,
+                "name": "Windows PowerShell"
+            },
+            {
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "hidden": false,
+                "name": "Command Prompt"
+            },
+            {
+                "closeOnExit": "graceful",
+                "colorScheme": "GitBash",
+                "commandline": "\"%PROGRAMFILES%\\Git\\usr\\bin\\bash.exe\" --login -i",
+                "guid": "{00000000-0000-0000-0000-000000000001}",
+                "historySize": 9001,
+                "icon": "%PROGRAMFILES%\\Git\\mingw64\\share\\git\\git-for-windows.ico",
+                "name": "GitBash",
+                "startingDirectory": "%USERPROFILE%"
+            },
+            {
+                "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+                "hidden": false,
+                "name": "PowerShell",
+                "source": "Windows.Terminal.PowershellCore"
+            },
+            {
+                "colorScheme": "Dracula",
+                "guid": "{4ff56d04-d9cf-57ea-bae2-ad396374e7e3}",
+                "hidden": false,
+                "icon": null,
+                "name": "WSL Ubuntu",
+                "source": "CanonicalGroupLimited.Ubuntu22.04LTS_79rhkp1fndgsc",
+                "tabTitle": "Ubuntu 24.04.2 LTS"
+            },
+            {
+                "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
+                "hidden": false,
+                "name": "Git Bash",
+                "source": "Git"
+            }
+        ]
+    },
+    "schemes": 
+    [
+        {
+            "background": "#31363B",
+            "black": "#31363B",
+            "blue": "#1D99F3",
+            "brightBlack": "#7F8C8D",
+            "brightBlue": "#3DAEE9",
+            "brightCyan": "#16A085",
+            "brightGreen": "#1CDC9A",
+            "brightPurple": "#8E44AD",
+            "brightRed": "#C0392B",
+            "brightWhite": "#FCFCFC",
+            "brightYellow": "#FDBC4B",
+            "cursorColor": "#EFF0F1",
+            "cyan": "#1ABC9C",
+            "foreground": "#EFF0F1",
+            "green": "#11D116",
+            "name": "Breeze",
+            "purple": "#9B59B6",
+            "red": "#ED1515",
+            "selectionBackground": "#EFF0F1",
+            "white": "#EFF0F1",
+            "yellow": "#F67400"
+        },
+        {
+            "background": "#131313",
+            "black": "#1F1F1F",
+            "blue": "#2A84D2",
+            "brightBlack": "#D6DBE5",
+            "brightBlue": "#1081D6",
+            "brightCyan": "#0F7DDB",
+            "brightGreen": "#1DD361",
+            "brightPurple": "#5350B9",
+            "brightRed": "#DE352E",
+            "brightWhite": "#FFFFFF",
+            "brightYellow": "#F3BD09",
+            "cursorColor": "#B9B9B9",
+            "cyan": "#1081D6",
+            "foreground": "#D6DBE5",
+            "green": "#2DC55E",
+            "name": "Brogrammer",
+            "purple": "#4E5AB7",
+            "red": "#F81118",
+            "selectionBackground": "#1F1F1F",
+            "white": "#D6DBE5",
+            "yellow": "#ECBA0F"
+        },
+        {
+            "background": "#0C0C0C",
+            "black": "#0C0C0C",
+            "blue": "#0037DA",
+            "brightBlack": "#767676",
+            "brightBlue": "#3B78FF",
+            "brightCyan": "#61D6D6",
+            "brightGreen": "#16C60C",
+            "brightPurple": "#B4009E",
+            "brightRed": "#E74856",
+            "brightWhite": "#F2F2F2",
+            "brightYellow": "#F9F1A5",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#3A96DD",
+            "foreground": "#B3B3B3",
+            "green": "#13A10E",
+            "name": "Campbell (modified)",
+            "purple": "#881798",
+            "red": "#C50F1F",
+            "selectionBackground": "#FFFFFF",
+            "white": "#CCCCCC",
+            "yellow": "#C19C00"
+        },
+        {
+            "background": "#587385",
+            "black": "#0C0C0C",
+            "blue": "#0037DA",
+            "brightBlack": "#767676",
+            "brightBlue": "#3B78FF",
+            "brightCyan": "#61D6D6",
+            "brightGreen": "#16C60C",
+            "brightPurple": "#B4009E",
+            "brightRed": "#E74856",
+            "brightWhite": "#F2F2F2",
+            "brightYellow": "#F9F1A5",
+            "cursorColor": "#00FF94",
+            "cyan": "#3A96DD",
+            "foreground": "#FFFFFF",
+            "green": "#13A10E",
+            "name": "Color Scheme 10",
+            "purple": "#881798",
+            "red": "#C50F1F",
+            "selectionBackground": "#0FFF3B",
+            "white": "#CCCCCC",
+            "yellow": "#C19C00"
+        },
+        {
+            "background": "#282A36",
+            "black": "#21222C",
+            "blue": "#BD93F9",
+            "brightBlack": "#6272A4",
+            "brightBlue": "#D6ACFF",
+            "brightCyan": "#A4FFFF",
+            "brightGreen": "#69FF94",
+            "brightPurple": "#FF92DF",
+            "brightRed": "#FF6E6E",
+            "brightWhite": "#FFFFFF",
+            "brightYellow": "#FFFFA5",
+            "cursorColor": "#F8F8F2",
+            "cyan": "#8BE9FD",
+            "foreground": "#F8F8F2",
+            "green": "#50FA7B",
+            "name": "Dracula",
+            "purple": "#FF79C6",
+            "red": "#FF5555",
+            "selectionBackground": "#44475A",
+            "white": "#F8F8F2",
+            "yellow": "#F1FA8C"
+        },
+        {
+            "background": "#000000",
+            "black": "#0C0C0C",
+            "blue": "#6060FF",
+            "brightBlack": "#767676",
+            "brightBlue": "#3B78FF",
+            "brightCyan": "#61D6D6",
+            "brightGreen": "#16C60C",
+            "brightPurple": "#B4009E",
+            "brightRed": "#E74856",
+            "brightWhite": "#F2F2F2",
+            "brightYellow": "#F9F1A5",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#3A96DD",
+            "foreground": "#BFBFBF",
+            "green": "#00A400",
+            "name": "GitBash",
+            "purple": "#BF00BF",
+            "red": "#BF0000",
+            "selectionBackground": "#FFFFFF",
+            "white": "#FFFFFF",
+            "yellow": "#BFBF00"
+        },
+        {
+            "background": "#300A24",
+            "black": "#171421",
+            "blue": "#0037DA",
+            "brightBlack": "#767676",
+            "brightBlue": "#08458F",
+            "brightCyan": "#2C9FB3",
+            "brightGreen": "#26A269",
+            "brightPurple": "#A347BA",
+            "brightRed": "#C01C28",
+            "brightWhite": "#F2F2F2",
+            "brightYellow": "#A2734C",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#3A96DD",
+            "foreground": "#FFFFFF",
+            "green": "#26A269",
+            "name": "Ubuntu-ColorScheme",
+            "purple": "#881798",
+            "red": "#C21A23",
+            "selectionBackground": "#FFFFFF",
+            "white": "#CCCCCC",
+            "yellow": "#A2734C"
+        }
+    ],
+    "showTerminalTitleInTitlebar": true,
+    "tabWidthMode": "equal",
+    "theme": "system",
+    "themes": [],
+    "useAcrylicInTabRow": true
+}
