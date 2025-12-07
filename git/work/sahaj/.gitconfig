@@ -7,3 +7,6 @@
 
 [core]
     sshCommand = "ssh -i ~/.ssh/ragul-engg-github"
+
+[include]
+	path = .gitconfig_local
