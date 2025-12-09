@@ -27,3 +27,7 @@ alias mk="minikube"
 
 alias d-c="docker-compose"
 alias dr="docker"
+
+if [ -f .shell_aliases_local ]; then
+    source .shell_aliases_local
+fi
