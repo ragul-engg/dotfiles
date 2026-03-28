@@ -1,11 +1,5 @@
 [user]
 	email = ragulshanmugarajan21@gmail.com
 
-[github]
-	user = ragul-engg
-
-[core]
-	sshCommand = "ssh -i ~/.ssh/ragul-engg-github"
-
 [include]
 	path = .gitconfig_local

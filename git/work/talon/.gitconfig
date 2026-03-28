@@ -1,11 +1,5 @@
 [user]
     email = raguls@sahaj.ai
 
-[gitlab]
-    user = raguls-sahaj
-
-[core]
-    sshCommand = "ssh -i ~/.ssh/raguls-sahaj-gitlab"
-
 [include]
 	path = .gitconfig_local
