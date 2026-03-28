@@ -4,6 +4,9 @@
 [init]
 	defaultBranch = main
 
+[user]
+	name = Ragul Shanmugarajan
+
 [includeIf "gitdir:~/personal/"]
 	path = ~/personal/.gitconfig
 
