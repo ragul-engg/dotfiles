@@ -1,0 +1,3 @@
+[submodule "iterm2/colors/dracula"]
+	path = iterm2/colors/dracula
+	url = https://github.com/dracula/iterm.git
