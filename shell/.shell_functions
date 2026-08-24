@@ -20,5 +20,5 @@ function create_gitlab_mr() {
         echo "Error: GITLAB_USER_ID environment variable is not set."
         return 1
     fi
-    glab mr create -a "$GITLAB_USER_ID" --fill --remove-source-branch
+    glab mr create -a "$GITLAB_USER_ID" --fill --remove-source-branch --draft
 }
