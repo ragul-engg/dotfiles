@@ -22,3 +22,13 @@ function create_gitlab_mr() {
     fi
     glab mr create -a "$GITLAB_USER_ID" --fill --remove-source-branch --draft
 }
+
+function awsp() {
+  local profile
+  profile=$(aws configure list-profiles | fzf --height 30% --reverse --prompt="AWS Profile > ")
+
+  if [ -n "$profile" ]; then
+    export AWS_PROFILE="$profile"
+    echo "Switched to AWS_PROFILE=$AWS_PROFILE"
+  fi
+}
