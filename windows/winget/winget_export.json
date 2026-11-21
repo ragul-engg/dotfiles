@@ -1,13 +1,28 @@
 {
 	"$schema" : "https://aka.ms/winget-packages.schema.2.0.json",
-	"CreationDate" : "2025-02-14T23:19:21.424-00:00",
+	"CreationDate" : "2026-11-21T11:08:41.411-00:00",
 	"Sources" : 
 	[
 		{
 			"Packages" : 
 			[
 				{
+					"PackageIdentifier" : "Bitwarden.Bitwarden"
+				},
+				{
+					"PackageIdentifier" : "Bruno.Bruno"
+				},
+				{
 					"PackageIdentifier" : "7zip.7zip"
+				},
+				{
+					"PackageIdentifier" : "8BitDo.UltimateSoftwareV2"
+				},
+				{
+					"PackageIdentifier" : "AutoHotkey.AutoHotkey"
+				},
+				{
+					"PackageIdentifier" : "DBeaver.DBeaver.Community"
 				},
 				{
 					"PackageIdentifier" : "Docker.DockerDesktop"
@@ -16,58 +31,88 @@
 					"PackageIdentifier" : "Git.Git"
 				},
 				{
+					"PackageIdentifier" : "GnuPG.GnuPG"
+				},
+				{
+					"PackageIdentifier" : "GnuPG.Gpg4win"
+				},
+				{
 					"PackageIdentifier" : "REALiX.HWiNFO"
 				},
 				{
 					"PackageIdentifier" : "Mozilla.Firefox"
 				},
 				{
-					"PackageIdentifier" : "Notepad++.Notepad++"
+					"PackageIdentifier" : "namazso.PawnIO"
 				},
 				{
 					"PackageIdentifier" : "Proton.ProtonVPN"
 				},
 				{
+					"PackageIdentifier" : "Telegram.TelegramDesktop"
+				},
+				{
 					"PackageIdentifier" : "VideoLAN.VLC"
 				},
 				{
-					"PackageIdentifier" : "Oracle.VirtualBox"
+					"PackageIdentifier" : "ajeetdsouza.zoxide"
+				},
+				{
+					"PackageIdentifier" : "Obsidian.Obsidian"
+				},
+				{
+					"PackageIdentifier" : "jdx.mise"
+				},
+				{
+					"PackageIdentifier" : "junegunn.fzf"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.VCRedist.2010.x64"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.VCRedist.2008.x64"
 				},
 				{
-					"PackageIdentifier" : "VSCodium.VSCodium"
+					"PackageIdentifier" : "Google.GoogleDrive"
 				},
 				{
-					"PackageIdentifier" : "JanDeDobbeleer.OhMyPosh"
+					"PackageIdentifier" : "TheDocumentFoundation.LibreOffice"
 				},
 				{
-					"PackageIdentifier" : "PuTTY.PuTTY"
+					"PackageIdentifier" : "Microsoft.PowerToys"
 				},
 				{
-					"PackageIdentifier" : "Starship.Starship"
+					"PackageIdentifier" : "Microsoft.VisualStudioCode"
 				},
 				{
-					"PackageIdentifier" : "Brave.Brave"
+					"PackageIdentifier" : "Microsoft.GameInput"
 				},
 				{
-					"PackageIdentifier" : "JetBrains.IntelliJIDEA.Community"
+					"PackageIdentifier" : "OpenRGB.OpenRGB"
+				},
+				{
+					"PackageIdentifier" : "EpicGames.EpicGamesLauncher"
 				},
 				{
 					"PackageIdentifier" : "KDE.KDEConnect"
 				},
 				{
-					"PackageIdentifier" : "Kubernetes.minikube"
-				},
-				{
-					"PackageIdentifier" : "OBSProject.OBSStudio"
+					"PackageIdentifier" : "Microsoft.Edge"
 				},
 				{
 					"PackageIdentifier" : "KDE.Okular"
 				},
 				{
+					"PackageIdentifier" : "CreativeTechnology.OpenAL"
+				},
+				{
+					"PackageIdentifier" : "RockstarGames.Launcher"
+				},
+				{
 					"PackageIdentifier" : "Valve.Steam"
+				},
+				{
+					"PackageIdentifier" : "RamenSoftware.Windhawk"
 				},
 				{
 					"PackageIdentifier" : "qBittorrent.qBittorrent"
@@ -79,76 +124,67 @@
 					"PackageIdentifier" : "Microsoft.VCRedist.2013.x64"
 				},
 				{
-					"PackageIdentifier" : "Microsoft.PowerToys"
+					"PackageIdentifier" : "Microsoft.VCRedist.2015+.x64"
 				},
 				{
-					"PackageIdentifier" : "ElectronicArts.EADesktop"
+					"PackageIdentifier" : "Microsoft.XNARedist"
 				},
 				{
-					"PackageIdentifier" : "Python.Launcher"
+					"PackageIdentifier" : "Microsoft.VCRedist.2012.x86"
+				},
+				{
+					"PackageIdentifier" : "DEVCOM.JetBrainsMonoNerdFont"
+				},
+				{
+					"PackageIdentifier" : "EpicGames.EpicOnlineServices"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.VCRedist.2008.x86"
 				},
 				{
-					"PackageIdentifier" : "Microsoft.VCRedist.2013.x86"
+					"PackageIdentifier" : "Microsoft.VCRedist.2015+.x86"
 				},
 				{
-					"PackageIdentifier" : "EpicGames.EpicGamesLauncher"
+					"PackageIdentifier" : "Microsoft.DotNet.DesktopRuntime.10"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.VCRedist.2010.x86"
 				},
 				{
-					"PackageIdentifier" : "Microsoft.VCRedist.2015+.x64"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.VCRedist.2015+.x86"
-				},
-				{
 					"PackageIdentifier" : "Microsoft.PowerShell"
 				},
 				{
-					"PackageIdentifier" : "Bitwarden.Bitwarden"
+					"PackageIdentifier" : "Microsoft.DotNet.Runtime.8"
 				},
 				{
-					"PackageIdentifier" : "AltSnap.AltSnap"
+					"PackageIdentifier" : "Microsoft.VCRedist.2012.x64"
 				},
 				{
-					"PackageIdentifier" : "Bitwarden.CLI"
+					"PackageIdentifier" : "Microsoft.VCRedist.2013.x86"
 				},
 				{
-					"PackageIdentifier" : "dbeaver.dbeaver"
+					"PackageIdentifier" : "Bjarneo.Cliamp"
 				},
 				{
 					"PackageIdentifier" : "Discord.Discord"
 				},
 				{
-					"PackageIdentifier" : "Flow-Launcher.Flow-Launcher"
+					"PackageIdentifier" : "GitHub.Copilot"
 				},
 				{
-					"PackageIdentifier" : "Hugo.Hugo.Extended"
+					"PackageIdentifier" : "OCBase.OCCT.Personal"
 				},
 				{
-					"PackageIdentifier" : "Postman.Postman"
+					"PackageIdentifier" : "buchen.portfolio"
 				},
 				{
 					"PackageIdentifier" : "Syncthing.Syncthing"
 				},
 				{
-					"PackageIdentifier" : "Obsidian.Obsidian"
-				},
-				{
-					"PackageIdentifier" : "Telegram.TelegramDesktop"
-				},
-				{
-					"PackageIdentifier" : "Python.Python.3.12"
-				},
-				{
-					"PackageIdentifier" : "Canonical.Ubuntu.2204"
-				},
-				{
 					"PackageIdentifier" : "Microsoft.AppInstaller"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.DotNet.Native.Runtime"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.UI.Xaml.2.7"
@@ -160,13 +196,28 @@
 					"PackageIdentifier" : "Microsoft.VCLibs.Desktop.14"
 				},
 				{
-					"PackageIdentifier" : "Microsoft.DevHome"
+					"PackageIdentifier" : "Microsoft.VCLibs.14"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.WinDbg"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.WindowsAppRuntime.1.7"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.WindowsAppRuntime.1.8"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.WindowsAppRuntime.2"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.WindowsTerminal"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.WSL"
+				},
+				{
+					"PackageIdentifier" : "JanDeDobbeleer.OhMyPosh"
 				}
 			],
 			"SourceDetails" : 
@@ -176,7 +227,22 @@
 				"Name" : "winget",
 				"Type" : "Microsoft.PreIndexed.Package"
 			}
+		},
+		{
+			"Packages" : 
+			[
+				{
+					"PackageIdentifier" : "9PFXXSHC64H3"
+				}
+			],
+			"SourceDetails" : 
+			{
+				"Argument" : "https://storeedgefd.dsx.mp.microsoft.com/v9.0",
+				"Identifier" : "StoreEdgeFD",
+				"Name" : "msstore",
+				"Type" : "Microsoft.Rest"
+			}
 		}
 	],
-	"WinGetVersion" : "1.9.25200"
+	"WinGetVersion" : "1.29.380"
 }
