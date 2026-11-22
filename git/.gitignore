@@ -7,3 +7,5 @@ mise.local.toml
 
 .terraform/
 
+
+**/.claude/settings.local.json
