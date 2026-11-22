@@ -5,7 +5,7 @@ editor: vim
 # What browser glab should run when opening links. This global config cannot be overridden by hostname.
 browser:
 # Set your desired Markdown renderer style. Available options are [dark, light, notty]. To set a custom style, refer to https://github.com/charmbracelet/glamour#styles
-glamour_style: dark
+glamour_style: auto
 # Allow glab to automatically check for updates and notify you when there are new updates.
 check_update: false
 # Last update check timestamp, used for checking when the last update check was performed.
@@ -29,3 +29,6 @@ hosts:
         api_host: gitlab.com
         # Your GitLab access token. To get one, read https://docs.gitlab.com/user/profile/personal_access_tokens/
         token:
+last_seen_version: v1.131.0
+last_whatsnew_version: v1.111.0
+glamour_style_auto_migrated: "true"
