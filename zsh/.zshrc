@@ -120,8 +120,6 @@ autoload -U add-zsh-hook
 _lazy_init() {
   command -v mise >/dev/null && eval "$(mise activate zsh)"
   command -v fzf  >/dev/null && eval "$(fzf --zsh)"
-  source "$HOMEBREW_PREFIX/etc/profile.d/autojump.sh" 2>/dev/null
-  source "/usr/share/autojump/autojump.sh" 2>/dev/null
   source "$HOME/.iterm2_shell_integration.zsh" 2>/dev/null
 
   add-zsh-hook -d precmd _lazy_init
@@ -136,3 +134,4 @@ source ~/.shell_functions
 
 [ -f $HOME/.zsh_opts ] && . $HOME/.zsh_opts
 
+eval "$(zoxide init zsh)"
