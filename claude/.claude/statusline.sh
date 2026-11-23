@@ -272,7 +272,41 @@ __p="$(__tokens_pct_int)"
 __uf="$(__fmt_token_compact "$__u")"
 __tf="$(__fmt_token_compact "$__t")"
 __emit '1' "$__uf/$__tf ($__p%)"
-__emit '38;2;254;243;199' ' '
+__emit '' '  '
+# Prompt cache: "cached" is the prefix served from or written to cache on the
+# last API call. Hot/cold is inferred from how long ago that usage last
+# changed, since the status JSON carries no cache expiry. Override the TTL
+# with STATUSLINE_CACHE_TTL (seconds; 300 = default 5m cache, 3600 = 1h).
+__cr="$(__norm_int "$(__field 'context_window.current_usage.cache_read_input_tokens')")"
+__cc="$(__norm_int "$(__field 'context_window.current_usage.cache_creation_input_tokens')")"
+__cached=$((__cr + __cc))
+__ttl="$(__norm_int "${STATUSLINE_CACHE_TTL:-300}")"
+__sid="$(__field 'session_id')"
+__now="$(__tick)"
+__age=-1
+if [ "$__cached" -gt 0 ] && [ -n "$__sid" ]; then
+  __sf="$HOME/.claude/state/statusline-cache-${__sid//[^A-Za-z0-9_-]/_}"
+  __sig="$__cr:$__cc:$(__norm_int "$(__field 'context_window.current_usage.output_tokens')")"
+  __old_sig=''; __old_ts=''
+  [ -r "$__sf" ] && read -r __old_sig __old_ts < "$__sf"
+  if [ "$__old_sig" = "$__sig" ] && [ -n "$__old_ts" ]; then
+    __age=$((__now - __old_ts))
+  else
+    printf '%s %s\n' "$__sig" "$__now" > "$__sf" 2>/dev/null
+    __age=0
+  fi
+fi
+if [ "$__age" -ge 0 ] && [ "$__age" -lt "$__ttl" ]; then
+  __left=$((__ttl - __age))
+  __emit '1;38;2;251;146;60' "cache hot $(__fmt_token_compact "$__cached")"
+  __emit '2;38;2;251;146;60' " ($((__left/60))m left)"
+else
+  __emit '1;38;2;125;211;252' "cache cold"
+  if [ "$__cached" -gt 0 ]; then
+    __emit '2;38;2;125;211;252' " $(__fmt_token_compact "$__cached") expired"
+  fi
+fi
+__emit '' '  '
 __v="$(__field 'cost.total_cost_usd')"
 __out="$(__cost_fmt "${__v:-0}" 2)"
 __emit '38;2;254;243;199' "$__out"
